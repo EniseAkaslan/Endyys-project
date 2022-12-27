@@ -8,7 +8,7 @@ public class tasklar {
 
 
     }
-    //soru 1
+    //soru 1   gülsüm h
 
     /*  soru1: Check if the integer is an Armstrong numbers to 4 digit numbers(4 digit-> exclusive)
         Armstrong sayi:herhangi bir 3 basamakli sayinin rakamlarinin kupleri toplami o sayiyi veriyorsa sayi  Armstrong sayidir
@@ -20,7 +20,7 @@ public class tasklar {
           gösteren program yazınız */
 
 
-    //soru 2
+    //soru 2  merve h
      /*
      Kullanicidan bir String aliniz.
      String'de var olan her character'in sayisini ekrana yazdiriniz.
@@ -29,7 +29,7 @@ public class tasklar {
     */
 
 
-    //soru 3
+    //soru 3  hakan h
     /*
     Armstrong sayi:herhangi bir sayinin rakamlarinin kupleri toplami o sayiyi veriyorsa sayi  Armstrong sayidir
         (0, 1, 153, 370, 371, 407, 1634)
@@ -39,7 +39,7 @@ public class tasklar {
 
         5 basamakli : 54748 */
 
-    //soru 4
+    //soru 4  yunus emre h
     /*
      * Kulanicidan alinan bir Stringin ilk ve son harfini yine kulanicidan alinan sayi kadar
      * return eden metod yaziniz
@@ -51,7 +51,7 @@ public class tasklar {
      */
 
 
-    //soru 5
+    //soru 5  sümeyra h
 
     /*
      Kullanıcıdan alınan bir tamsayıya kadar FIBONACCI dizisi oluşturun.
@@ -59,7 +59,7 @@ public class tasklar {
      */
 
 
-    //soru 6
+    //soru 6  ayse h
 
       /*
     Ask user enter a positive number and check if it is prime or not
@@ -67,12 +67,12 @@ public class tasklar {
      */
 
 
-//soru 7
+//soru 7  salim h
 
     // STRING OLAN PIN kodunuzu kontrol eden bir kod yazınız.
 
 
-    //soru 8
+    //soru 8  sena h
 
       /* Perfect Number (Mukemmel sayi)
       Kullanici tarafindan bir sayiya kadar olan sayilarin,
@@ -85,7 +85,7 @@ public class tasklar {
     */
 
 
-    //soru 9
+    //soru 9  naz h
 
     /*
      * Kullanicidan bir cumle ve bir harf alin,
@@ -98,7 +98,7 @@ public class tasklar {
      */
 
 
-    //soru 10
+    //soru 10  erhan h
 
      /*
  Create a function that takes an array and the difference between the largest
@@ -110,6 +110,18 @@ public class tasklar {
 
 
 
+// soru 11  enise h
 
+
+     /*
+ Create a method that accepts a String as parameter and finds the sum of digits in that String.
+ Example:
+ input : J4\/4 1$ 34$¥
+ output : 16
+
+ Hint:
+ Character.isDigit()
+ Integer.valueOf()
+*/
 
 }
