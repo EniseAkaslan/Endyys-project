@@ -12,16 +12,10 @@ public class tasklar {
 
         System.out.println("main method acıldı. ");
 
-        soru1();
-
-
-
-        sumOfDigits();
-
         soru2();
-
+        soru1();
+        sumOfDigits();
         soruDokuz();
-
 
 
     }
@@ -39,7 +33,7 @@ public class tasklar {
 
 
     public static void soru1(){
-        System.out.println("bir sayı giriniz");
+        System.out.println("\n\nbir sayı giriniz");
         int sayi=scan.nextInt();
         int birlerBas=sayi%10;
         int onlarBas =(sayi/10)%10;
@@ -57,7 +51,7 @@ public class tasklar {
         // Ornek: alacan ==> a = 3, l = 1, c = 1, n = 1
         // abaa   ==> a=3  b=1
 
-        System.out.println("Lutfen bir metin giriniz : ");
+        System.out.println("\nLutfen bir metin giriniz : ");
         String metin = scan.nextLine();
 
         String[] arr = metin.split("");
@@ -68,7 +62,6 @@ public class tasklar {
             if (!tekrarsizList.contains(arr[i])) {
                 tekrarsizList.add(arr[i]);
             }
-            System.out.println(tekrarsizList);
         }
         int sayac = 0;
         for (int i = 0; i < tekrarsizList.size(); i++) {
@@ -157,7 +150,7 @@ public class tasklar {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Bir cumle veya kelime giriniz: ");
+        System.out.print("\nBir cumle veya kelime giriniz: ");
         String cumle = scan.nextLine();
         System.out.print("Bir harf giriniz: ");
         char harf = scan.next().charAt(0);
@@ -166,8 +159,9 @@ public class tasklar {
             if (cumle.charAt(i) == harf) {
                 sayac++;
             }
-            System.out.println("Girdiginiz cumle veya kelımede " + sayac + " tane '" + harf + "' vardır");
         }
+        System.out.println("Girdiginiz cumle veya kelımede " + sayac + " tane '" + harf + "' vardır");
+
     }
 
 
@@ -198,14 +192,17 @@ public class tasklar {
 */
      public static void sumOfDigits(){
 
-         System.out.println("sayı da olan bir string giriniz");
-         String str=scan.nextLine();
+         System.out.println("\nIcinde sayı da olan bir string giriniz");
+         // dummy ilazımmm coooogggg laazım
+         String str= scan.nextLine();
+
          int sum=0;
 
          for(int i=0; i<str.length();i++){
 
              if(Character.isDigit(str.charAt(i))){
-                 sum+=Integer.valueOf(""+str.charAt(i));
+                 sum+=Integer.parseInt(String.valueOf(str.charAt(i)));
+
              }
 
          }
