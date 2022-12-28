@@ -1,11 +1,13 @@
+import java.util.Scanner;
+
 public class tasklar {
 
     public static void main(String[] args) {
 
-        System.out.println("main method acıldı. ");
 
 
 
+        soruDort();
 
     }
     //soru 1   gülsüm h
@@ -40,16 +42,30 @@ public class tasklar {
         5 basamakli : 54748 */
 
     //soru 4  yunus emre h
-    /*
-     * Kulanicidan alinan bir Stringin ilk ve son harfini yine kulanicidan alinan sayi kadar
-     * return eden metod yaziniz
-     *
-     * ornek:  input            output
-     *         elma  2           eaea
-     *         army  3           ayayay
+    public static void soruDort() {
+        /*
+         * Kulanicidan alinan bir Stringin ilk ve son harfini yine kulanicidan alinan sayi kadar
+         * return eden metod yaziniz
+         *
+         * ornek:  input            output
+         *         elma  2           eaea
+         *         army  3           ayayay
+         */
 
-     */
+        Scanner sc = new Scanner(System.in);
+        System.out.print("bir kelime girin: ");
+        String kelime = sc.next();
+        System.out.print("bir rakam girin: ");
+        int sayi = sc.nextInt();
 
+        String ilkVeSonHarf = kelime.substring(0,1).concat(kelime.substring(kelime.length()-1));
+
+        for (int i = 0; i < sayi; i++) {
+
+            System.out.print(ilkVeSonHarf);
+        }
+
+    }
 
     //soru 5  sümeyra h
 
