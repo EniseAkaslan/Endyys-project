@@ -32,7 +32,7 @@ public class tasklar {
         // Ornek: alacan ==> a = 3, l = 1, c = 1, n = 1
         // abaa   ==> a=3  b=1
 
-        System.out.println("Bir metin giriniz : ");
+        System.out.println("Lutfen bir metin giriniz : ");
         String metin = scan.nextLine();
 
         String[] arr = metin.split("");
