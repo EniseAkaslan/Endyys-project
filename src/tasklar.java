@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class tasklar {
 
     public static void main(String[] args) {
@@ -5,7 +7,7 @@ public class tasklar {
         System.out.println("main method acıldı. ");
 
 
-
+        sumOfDigits();
 
     }
     //soru 1   gülsüm h
@@ -123,5 +125,21 @@ public class tasklar {
  Character.isDigit()
  Integer.valueOf()
 */
+     public static void sumOfDigits(){
+         Scanner input = new Scanner(System.in);
+         System.out.println("sayı da olan bir string giriniz");
+         String str=input.nextLine();
+         int sum=0;
+
+         for(int i=0; i<str.length();i++){
+
+             if(Character.isDigit(str.charAt(i))){
+                 sum+=Integer.valueOf(""+str.charAt(i));
+             }
+
+         }
+
+         System.out.println("Sum of digits:"+sum);
+     }
 
 }
