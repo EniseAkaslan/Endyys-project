@@ -23,8 +23,6 @@ public class tasklar {
           gösteren program yazınız */
 
 
-
-
     public static void soru2() {
         // soru 2  merve h
         // Kullanicidan bir String aliniz.
@@ -36,23 +34,23 @@ public class tasklar {
         String metin = scan.nextLine();
 
         String[] arr = metin.split("");
-        List <String> tekrarsizList = new ArrayList<>();
+        List<String> tekrarsizList = new ArrayList<>();
 
         Arrays.sort(arr);
-        for (int i=0; i<arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (!tekrarsizList.contains(arr[i])) {
                 tekrarsizList.add(arr[i]);
             }
             System.out.println(tekrarsizList);
         }
         int sayac = 0;
-        for (int i=0; i<tekrarsizList.size(); i++) {
-            for (int j=0; j<arr.length; j++) {
-            if(tekrarsizList.get(i).equals(arr[j])) {
-                sayac ++ ;
+        for (int i = 0; i < tekrarsizList.size(); i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (tekrarsizList.get(i).equals(arr[j])) {
+                    sayac++;
                 }
             }
-            System.out.print(tekrarsizList.get(i)+" = "+ sayac +" ");
+            System.out.print(tekrarsizList.get(i) + " = " + sayac + " ");
             sayac = 0;
         }
 
@@ -128,6 +126,28 @@ public class tasklar {
      * OUTPUT : Girdiginiz cumlede "e" harfi 3 kere kullanilmis.
      */
 
+
+
+
+    public static void main(String[] args) {
+
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Bir cumle veya kelime giriniz: ");
+        String cumle = scan.nextLine();
+        System.out.print("Bir harf giriniz: ");
+        char harf = scan.next().charAt(0);
+        int sayac = 0;
+        for (int i = 0; i < cumle.length(); i++) {
+            if (cumle.charAt(i) == harf) {
+                sayac++;
+            }
+            System.out.println("Girdiginiz cumle veya kelımede " + sayac + " tane '" + harf + "' vardır");
+        }
+    }
+
+}
 
     //soru 10  erhan h
 
