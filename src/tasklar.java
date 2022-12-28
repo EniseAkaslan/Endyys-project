@@ -12,6 +12,8 @@ public class tasklar {
 
         System.out.println("main method acıldı. ");
 
+        soru1();
+
 
 
         sumOfDigits();
@@ -31,8 +33,21 @@ public class tasklar {
             153 = 1*1*1 + 5*5*5 + 3*3*3 = 153
             370 = 3*3*3 + 7*7*7 + 0*0*0 = 370
 
-          soru2: Birden baslayarak girilen sayıya kadar her bir tamsayının amstrong sayı olup olmadıgını
-          gösteren program yazınız */
+       */
+
+
+
+
+    public static void soru1(){
+        System.out.println("bir sayı giriniz");
+        int sayi=scan.nextInt();
+        int birlerBas=sayi%10;
+        int onlarBas =(sayi/10)%10;
+        int yuzlerBas=sayi/100;
+        if (Math.pow(birlerBas,3)+Math.pow(onlarBas,3)+Math.pow(yuzlerBas,3)==sayi){
+            System.out.println(sayi+": armstrong sayıdır.");
+        }else System.out.println("sayı armstrong değildir.");
+    }
 
 
     public static void soru2() {
@@ -182,9 +197,9 @@ public class tasklar {
  Integer.valueOf()
 */
      public static void sumOfDigits(){
-         Scanner input = new Scanner(System.in);
+
          System.out.println("sayı da olan bir string giriniz");
-         String str=input.nextLine();
+         String str=scan.nextLine();
          int sum=0;
 
          for(int i=0; i<str.length();i++){
