@@ -1,9 +1,12 @@
+import java.sql.Array;
+import java.util.*;
+
 public class tasklar {
+    static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
 
         System.out.println("main method acıldı. ");
-
 
 
 
@@ -20,13 +23,41 @@ public class tasklar {
           gösteren program yazınız */
 
 
-    //soru 2  merve h
-     /*
-     Kullanicidan bir String aliniz.
-     String'de var olan her character'in sayisini ekrana yazdiriniz.
-     Ornek: alacan ==> a = 3, l = 1, c = 1, n = 1
-            abaa   ==> a=3  b=1
-    */
+
+
+    public static void soru2() {
+        // soru 2  merve h
+        // Kullanicidan bir String aliniz.
+        // String'de var olan her character'in sayisini ekrana yazdiriniz.
+        // Ornek: alacan ==> a = 3, l = 1, c = 1, n = 1
+        // abaa   ==> a=3  b=1
+
+        System.out.println("Bir metin giriniz : ");
+        String metin = scan.nextLine();
+
+        String[] arr = metin.split("");
+        List <String> tekrarsizList = new ArrayList<>();
+
+        Arrays.sort(arr);
+        for (int i=0; i<arr.length; i++) {
+            if (!tekrarsizList.contains(arr[i])) {
+                tekrarsizList.add(arr[i]);
+            }
+            System.out.println(tekrarsizList);
+        }
+        int sayac = 0;
+        for (int i=0; i<tekrarsizList.size(); i++) {
+            for (int j=0; j<arr.length; j++) {
+            if(tekrarsizList.get(i).equals(arr[j])) {
+                sayac ++ ;
+                }
+            }
+            System.out.print(tekrarsizList.get(i)+" = "+ sayac +" ");
+            sayac = 0;
+        }
+
+
+    }
 
 
     //soru 3  hakan h
@@ -107,7 +138,6 @@ public class tasklar {
     kullanıcının girdigi bir array'in en buyuk elemani ile
     en kucuk elemanının  farkını bulan bir method create ediniz.
  */
-
 
 
 // soru 11  enise h
