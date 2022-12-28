@@ -18,6 +18,8 @@ public class tasklar {
 
         soru2();
 
+        soruDokuz();
+
 
 
     }
@@ -135,11 +137,7 @@ public class tasklar {
      *
      * OUTPUT : Girdiginiz cumlede "e" harfi 3 kere kullanilmis.
      */
-
-
-
-
-    public static void main(String[] args) {
+    public static void soruDokuz() {
 
 
         Scanner scan = new Scanner(System.in);
@@ -157,7 +155,7 @@ public class tasklar {
         }
     }
 
-}
+
 
     //soru 10  erhan h
 
