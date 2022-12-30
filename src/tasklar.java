@@ -1,7 +1,6 @@
 
 import java.util.Scanner;
 
-import java.sql.Array;
 import java.util.*;
 
 
@@ -11,6 +10,13 @@ public class tasklar {
     public static void main(String[] args) {
 
         System.out.println("main method acıldı. ");
+
+        soru1();
+
+        soruDort();
+
+        sumOfDigits();
+
 
         soru2();
         soru1();
@@ -96,8 +102,25 @@ public class tasklar {
      * ornek:  input            output
      *         elma  2           eaea
      *         army  3           ayayay
-
      */
+
+    public static void soruDort(){
+
+        System.out.print("Kelim Girin: ");
+        String kelime = scan.next();
+        System.out.print("Bir sayi girin: ");
+        int sayi = scan.nextInt();
+
+        String ilkSonHarf= kelime.substring(0,1)+kelime.substring(kelime.length()-1);
+
+        String tekrarliKelime="";
+        for (int i = 1; i <= sayi; i++) {
+            tekrarliKelime += ilkSonHarf;
+        }
+        System.out.println(tekrarliKelime);
+
+
+    }
 
 
     //soru 5  sümeyra h
