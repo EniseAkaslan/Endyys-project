@@ -17,10 +17,8 @@ public class tasklar {
 
         sumOfDigits();
 
-
         soru2();
-        soru1();
-        sumOfDigits();
+
         soruDokuz();
 
 
@@ -36,17 +34,15 @@ public class tasklar {
        */
 
 
-
-
-    public static void soru1(){
+    public static void soru1() {
         System.out.println("\n\nbir sayı giriniz");
-        int sayi=scan.nextInt();
-        int birlerBas=sayi%10;
-        int onlarBas =(sayi/10)%10;
-        int yuzlerBas=sayi/100;
-        if (Math.pow(birlerBas,3)+Math.pow(onlarBas,3)+Math.pow(yuzlerBas,3)==sayi){
-            System.out.println(sayi+": armstrong sayıdır.");
-        }else System.out.println("sayı armstrong değildir.");
+        int sayi = scan.nextInt();
+        int birlerBas = sayi % 10;
+        int onlarBas = (sayi / 10) % 10;
+        int yuzlerBas = sayi / 100;
+        if (Math.pow(birlerBas, 3) + Math.pow(onlarBas, 3) + Math.pow(yuzlerBas, 3) == sayi) {
+            System.out.println(sayi + ": armstrong sayıdır.");
+        } else System.out.println("sayı armstrong değildir.");
     }
 
 
@@ -95,25 +91,25 @@ public class tasklar {
         5 basamakli : 54748 */
 
     //soru 4  yunus emre h
-    /*
-     * Kulanicidan alinan bir Stringin ilk ve son harfini yine kulanicidan alinan sayi kadar
-     * return eden metod yaziniz
-     *
-     * ornek:  input            output
-     *         elma  2           eaea
-     *         army  3           ayayay
-     */
 
-    public static void soruDort(){
+    public static void soruDort() {
+        /*
+         * Kulanicidan alinan bir Stringin ilk ve son harfini yine kulanicidan alinan sayi kadar
+         * return eden metod yaziniz
+         *
+         * ornek:  input            output
+         *         elma  2           eaea
+         *         army  3           ayayay
+         */
 
         System.out.print("Kelim Girin: ");
         String kelime = scan.next();
         System.out.print("Bir sayi girin: ");
         int sayi = scan.nextInt();
 
-        String ilkSonHarf= kelime.substring(0,1)+kelime.substring(kelime.length()-1);
+        String ilkSonHarf = kelime.substring(0, 1) + kelime.substring(kelime.length() - 1);
 
-        String tekrarliKelime="";
+        String tekrarliKelime = "";
         for (int i = 1; i <= sayi; i++) {
             tekrarliKelime += ilkSonHarf;
         }
@@ -139,7 +135,7 @@ public class tasklar {
      */
 
 
-//soru 7  salim h
+    //soru 7  salim h
 
     // STRING OLAN PIN kodunuzu kontrol eden bir kod yazınız.
 
@@ -159,17 +155,16 @@ public class tasklar {
 
     //soru 9  naz h
 
-    /*
-     * Kullanicidan bir cumle ve bir harf alin,
-     * Cumlede harfin kac kere
-     * kullanildigini bulup, yazdirin
-     * ORNEK:
-     * INPUT : Cumle: Java ogrenmek cok guzel. Harf :e
-     *
-     * OUTPUT : Girdiginiz cumlede "e" harfi 3 kere kullanilmis.
-     */
     public static void soruDokuz() {
-
+        /*
+         * Kullanicidan bir cumle ve bir harf alin,
+         * Cumlede harfin kac kere
+         * kullanildigini bulup, yazdirin
+         * ORNEK:
+         * INPUT : Cumle: Java ogrenmek cok guzel. Harf :e
+         *
+         * OUTPUT : Girdiginiz cumlede "e" harfi 3 kere kullanilmis.
+         */
 
         Scanner scan = new Scanner(System.in);
 
@@ -188,49 +183,48 @@ public class tasklar {
     }
 
 
-
     //soru 10  erhan h
 
      /*
- Create a function that takes an array and the difference between the largest
- and the smallest numbers.
- Ask user to enter array elements.
+    Create a function that takes an array and the difference between the largest
+    and the smallest numbers.
+    Ask user to enter array elements.
     kullanıcının girdigi bir array'in en buyuk elemani ile
     en kucuk elemanının  farkını bulan bir method create ediniz.
- */
+     */
 
 
-// soru 11  enise h
+    // soru 11  enise h
 
 
-     /*
- Create a method that accepts a String as parameter and finds the sum of digits in that String.
- Example:
- input : J4\/4 1$ 34$¥
- output : 16
+    /*
+    Create a method that accepts a String as parameter and finds the sum of digits in that String.
+    Example:
+    input : J4\/4 1$ 34$¥
+    output : 16
 
- Hint:
- Character.isDigit()
- Integer.valueOf()
-*/
-     public static void sumOfDigits(){
+    Hint:
+    Character.isDigit()
+    Integer.valueOf()
+    */
+    public static void sumOfDigits() {
 
-         System.out.println("\nIcinde sayı da olan bir string giriniz");
-         // dummy ilazımmm coooogggg laazım
-         String str= scan.nextLine();
+        System.out.println("\nIcinde sayı da olan bir string giriniz");
+        // dummy ilazımmm coooogggg laazım
+        String str = scan.nextLine();
 
-         int sum=0;
+        int sum = 0;
 
-         for(int i=0; i<str.length();i++){
+        for (int i = 0; i < str.length(); i++) {
 
-             if(Character.isDigit(str.charAt(i))){
-                 sum+=Integer.parseInt(String.valueOf(str.charAt(i)));
+            if (Character.isDigit(str.charAt(i))) {
+                sum += Integer.parseInt(String.valueOf(str.charAt(i)));
 
-             }
+            }
 
-         }
+        }
 
-         System.out.println("Sum of digits:"+sum);
-     }
+        System.out.println("Sum of digits:" + sum);
+    }
 
 }
